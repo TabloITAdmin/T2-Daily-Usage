@@ -39,3 +39,20 @@ fieldset {
     border-color: rgb(255, 141, 90);
     border-radius: 10px;
 }
+
+iframe {
+    height: 600;
+    width: 700px;
+    border-color: rgb(255, 141, 90);
+    border-width: 10px;
+    border-radius: 10px;
+  }
+
+.button {
+    background-color: rgb(159, 193, 192);
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
