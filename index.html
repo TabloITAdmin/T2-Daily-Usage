@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="Tablo Logo.jpg">
@@ -7,14 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tablo Bfpar2 Network</title>
 </head>
+
 <body>
-  <form action="https://script.google.com/macros/s/AKfycbwBL9ZisX_83UQxpoj9vpOCukg0GwxRPq7NRS85sQmPZa2FvWGiCUN99H0cftOWvivYUw/exec" method="post">
-  <div class="container">
-    <img src="Tablo Logo.jpg" alt="Tablo Logo">
-    <h1><strong>T2 BODEGA USAGE</strong></h1>
-    <label>PRODUCT:</label><br>
-    <input list="products" id="product input" name="PRODUCT NAME" placeholder="Search Here">
-    <datalist id="products">
+  <form
+    action="https://script.google.com/macros/s/AKfycbwBL9ZisX_83UQxpoj9vpOCukg0GwxRPq7NRS85sQmPZa2FvWGiCUN99H0cftOWvivYUw/exec"
+    method="post">
+    <div class="container">
+      <img src="Tablo Logo.jpg" alt="Tablo Logo">
+      <h1><strong>TABLO 2 <br> BODEGA USAGE</strong></h1>
+      <label>PRODUCT:</label><br>
+      <input list="products" id="product input" name="PRODUCT NAME" placeholder="Search Here"
+        onchange="resetIfInvalid(this);" required>
+      <datalist id="products">
         <option value="Ajinomoto 1kg">
         <option value="Alaska Whipped Cream">
         <option value="Badia Chipotle">
@@ -570,26 +575,35 @@
         <option value="Plastic Ruler 12&#34;">
         <option value="Sharpie Marking Pen Black Small">
         <option value="Advance Continues Paper 1 Ply">
-    </datalist><br>
-    <label>QUANTITY:</label><br>
-    <input style="width: 50px;" type="number" name="QUANTITY" step=".001" placeholder="Qty.">
-    <fieldset style="margin-top: 20px;">
-      <legend>PREPARED BY:</legend>
-      <ul>
-        <li><input type="checkbox" name="PREPARED BY" class="largerCheckbox" value="Christina">- Christina</li>
-        <li><input type="checkbox" name="PREPARED BY" class="largerCheckbox" value="Arthur" style="margin-top: 10px;">- Arthur</li>
-        <li><input type="checkbox" name="PREPARED BY" class="largerCheckbox" value="Maricel" style="margin-top: 10px;">- Maricel</li>
-      </ul>
-    </fieldset><br>
-    <label>NOTES:</label><br>
-    <input style="width: 250px;" type="text" name="NOTES" placeholder="Notes Here"><br>
-    <input id="time" name="TIME" style="width: 380px; margin-top: 10px; text-align: center; background-color: rgb(255, 141, 90);"><br>
-    <button type="submit" onclick="hideButton(this)" class="button">ADD</button><br>
+      </datalist><br>
+      <label>QUANTITY:</label><br>
+      <input style="width: 50px;" type="number" name="QUANTITY" step=".001" placeholder="Qty.">
+      <fieldset style="margin-top: 20px;">
+        <legend>PREPARED BY:</legend>
+        <ul>
+          <li><input type="checkbox" name="PREPARED BY" class="largerCheckbox" value="Christina">- Christina</li>
+          <li><input type="checkbox" name="PREPARED BY" class="largerCheckbox" value="Arthur"
+              style="margin-top: 10px;">- Arthur</li>
+          <li><input type="checkbox" name="PREPARED BY" class="largerCheckbox" value="Maricel"
+              style="margin-top: 10px;">- Maricel</li>
+        </ul>
+      </fieldset><br>
+      <label>NOTES:</label><br>
+      <input style="width: 250px;" type="text" name="NOTES" placeholder="Notes Here"><br>
+      <input id="time" name="TIME"
+        style="width: 380px; margin-top: 10px; text-align: center; background-color: rgb(255, 141, 90);"><br>
+      <button type="submit" onclick="hideButton(this)" class="button">ADD</button><br>
   </form>
   <form action="checklist.html">
-      <input type="submit" value="CHECKLIST" class="button">
+    <input type="submit" value="CHECKLIST" class="button">
   </form>
+
+  <button class="button"
+    onclick="window.top.location.replace('https://script.google.com/macros/s/AKfycbzpX_B_EEpwnCV_Qdn13oyfl7LyZNjnhR9IjUGzHNklGuOahT0bgV_vQwXlTGZsl9cU/exec')"
+    type="submit">REAL TIME <br> STOCKS</button><br>
+
   </div>
 </body>
 <script src="script.js"></script>
+
 </html>
